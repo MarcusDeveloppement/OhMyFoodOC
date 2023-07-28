@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +20,100 @@ button {
 button:hover {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.8128501401) 0%, rgb(255, 121, 218) 100%);
   cursor: pointer;
+}
+
+.restaurant-card {
+  border-radius: 20px;
+  background-color: white;
+  height: 18rem;
+  object-fit: cover;
+}
+.restaurant-card img {
+  width: 346px;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.description-restaurants {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.description-restaurants h3 {
+  margin: 0;
+}
+.description-restaurants p {
+  margin: 0;
+}
+.description-restaurants label {
+  position: absolute;
+  left: 18rem;
+  top: 1rem;
+}
+
+/* Cacher la case à cocher par défaut */
+.heart-checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Styliser l'icône de cœur */
+.heart-checkbox .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px; /* Ajustez la taille de l'icône selon vos besoins */
+  color: #ffffff; /* Couleur de l'icône de cœur vide */
+  z-index: 1;
+}
+
+.far {
+  position: absolute;
+  color: black;
+  z-index: 2;
+  font-size: 18px;
+}
+
+/* Masquer le cœur vide lorsque la case est cochée */
+.heart-checkbox input[type=checkbox]:checked + i::before {
+  content: "\f004"; /* Code de l'icône de cœur rempli dans Font Awesome */
+  color: #9356dc; /* Couleur de l'icône de cœur rempli */
+}
+
+.choix {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f3f3f3;
+  width: 335px;
+  height: 75px;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(56, 56, 56, 0.25);
+  font-weight: 500;
+}
+.choix p {
+  margin-right: 3rem;
+}
+
+.choix-global article {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.number {
+  position: absolute;
+  left: -0.8rem;
+  border: 1px solid #9356dc;
+  padding: 0.25rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 1.3rem;
+  background-color: #9356dc;
+  color: #f3f3f3;
 }
 
 .header {
@@ -62,6 +157,41 @@ button:hover {
 .explorer p {
   color: #353535;
   width: 315px;
+}
+
+.fonctionnement {
+  padding-bottom: 2rem;
+}
+.fonctionnement h2 {
+  margin-left: 1.5rem;
+}
+
+.choix-global {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fa-store {
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #f3f3f3;
+  gap: 20px;
+  padding-bottom: 5rem;
+}
+.restaurants h2 {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.global-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

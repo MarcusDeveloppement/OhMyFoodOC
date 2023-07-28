@@ -1,0 +1,37 @@
+.choix {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $grey-light;
+  width: 335px;
+  height: 75px;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 10px rgba(56, 56, 56, 0.25);
+  font-weight: 500;
+
+  p {
+    margin-right: 3rem;
+  }
+}
+
+.choix-global {
+  article {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.number {
+  position: absolute;
+  left: -0.8rem;
+  border: 1px solid $purple-light;
+  padding: 0.25rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 1.3rem;
+  background-color: $purple-light;
+  color: $grey-light;
+}

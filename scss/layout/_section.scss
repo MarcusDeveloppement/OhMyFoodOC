@@ -1,3 +1,5 @@
+// *********************************Titre en-tête******************************************************
+
 .explorer {
   display: flex;
   flex-direction: column;
@@ -14,4 +16,41 @@
     color: $grey-dark-plus;
     width: 315px;
   }
+}
+// ******************************section fonctionnement********************************************
+.fonctionnement {
+  padding-bottom: 2rem;
+  h2 {
+    margin-left: 1.5rem;
+  }
+}
+
+.choix-global {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fa-store {
+  color: $purple-light;
+}
+
+// restaurants
+.restaurants {
+  background-color: $grey-light;
+  gap: 20px;
+  padding-bottom: 5rem;
+
+  h2 {
+    padding: 1.5rem;
+    margin: 0;
+  }
+}
+
+.global-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
