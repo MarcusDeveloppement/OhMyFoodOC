@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background-image: linear-gradient(#ff79da, #9356dc);
+  border-radius: 50px;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8128501401) 0%, rgb(255, 121, 218) 100%);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+}
+.header img {
+  width: 197px;
+  height: 36px;
+}
+.header p {
+  color: #353535;
+}
+
+.localisation {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+.localisation i {
+  margin-right: 0.5rem;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f3f3f3;
+  height: 16rem;
+}
+.explorer h1 {
+  margin: 0;
+  width: 17rem;
+}
+.explorer p {
+  color: #353535;
+  width: 315px;
+}
+
+/*# sourceMappingURL=style.css.map */

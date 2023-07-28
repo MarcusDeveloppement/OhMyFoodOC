@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  img {
+    width: 197px;
+    height: 36px;
+  }
+  p {
+    color: $grey-dark-plus;
+  }
+}
+
+.localisation {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey-dark;
+  i {
+    margin-right: 0.5rem;
+  }
+}
