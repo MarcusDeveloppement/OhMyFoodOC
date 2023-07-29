@@ -4,6 +4,19 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  margin-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -13,46 +26,20 @@ button {
   border-radius: 50px;
   border: none;
   padding: 0.8rem 1.2rem;
-  color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+button a {
+  color: #f3f3f3;
+  font-weight: 500;
 }
 
 button:hover {
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8128501401) 0%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(0deg, rgba(146, 86, 220, 0.714) 0%, rgb(255, 121, 218) 100%);
   cursor: pointer;
 }
 
-.restaurant-card {
-  border-radius: 20px;
-  background-color: white;
-  height: 18rem;
-  object-fit: cover;
-}
-.restaurant-card img {
-  width: 346px;
-  height: 200px;
-  border-radius: 20px 20px 0 0;
-}
-
-.description-restaurants {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.description-restaurants h3 {
-  margin: 0;
-}
-.description-restaurants p {
-  margin: 0;
-}
-.description-restaurants label {
-  position: absolute;
-  left: 18rem;
-  top: 1rem;
-}
-
 /* Cacher la case à cocher par défaut */
-.heart-checkbox input[type=checkbox] {
+.heart-checkbox input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -63,22 +50,58 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px; /* Ajustez la taille de l'icône selon vos besoins */
-  color: #ffffff; /* Couleur de l'icône de cœur vide */
+  font-size: 25px;
+  color: #ffffff;
   z-index: 1;
 }
-
-.far {
+.heart-checkbox .fa-regular {
   position: absolute;
-  color: black;
+  color: rgb(39, 39, 39);
   z-index: 2;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 /* Masquer le cœur vide lorsque la case est cochée */
 .heart-checkbox input[type=checkbox]:checked + i::before {
-  content: "\f004"; /* Code de l'icône de cœur rempli dans Font Awesome */
-  color: #9356dc; /* Couleur de l'icône de cœur rempli */
+  content: "\f004";
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant-card {
+  border-radius: 20px;
+  background-color: white;
+  height: 17rem;
+}
+.restaurant-card img {
+  width: 346px;
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.description-restaurants {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+.description-restaurants h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.description-restaurants p {
+  margin: 0;
+  font-size: 17px;
+}
+.description-restaurants label {
+  position: absolute;
+  left: 18rem;
+  top: 0.4rem;
 }
 
 .choix {
@@ -94,6 +117,14 @@ button:hover {
 }
 .choix p {
   margin-right: 3rem;
+}
+.choix i {
+  color: #7e7e7e;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
 }
 
 .choix-global article {
@@ -114,6 +145,39 @@ button:hover {
   width: 1.3rem;
   background-color: #9356dc;
   color: #f3f3f3;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 25px;
+}
+footer img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-bottom: 1rem;
+  height: 17px;
+}
+footer p {
+  color: #f3f3f3;
+  margin: 0;
+}
+footer p:hover {
+  color: #9356dc;
+  transition-duration: 0.2s;
+}
+footer .resize-p {
+  font-weight: 500;
+}
+footer i {
+  padding-right: 1rem;
+  width: 1rem;
+}
+footer .footer-description {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -161,9 +225,10 @@ button:hover {
 
 .fonctionnement {
   padding-bottom: 2rem;
-}
-.fonctionnement h2 {
-  margin-left: 1.5rem;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .choix-global {
@@ -174,14 +239,14 @@ button:hover {
   gap: 20px;
 }
 
-.fa-store {
+#active {
   color: #9356dc;
 }
 
 .restaurants {
   background-color: #f3f3f3;
-  gap: 20px;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 .restaurants h2 {
   padding: 1.5rem;
@@ -192,6 +257,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,14 +3,17 @@ button {
   border-radius: 50px;
   border: none;
   padding: 0.8rem 1.2rem;
-  color: #fff;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  a {
+    color: $grey-light;
+    font-weight: 500;
+  }
 }
 
 button:hover {
   background: linear-gradient(
     0deg,
-    rgba(147, 86, 220, 0.8128501400560224) 0%,
+    rgba(146, 86, 220, 0.714) 0%,
     rgba(255, 121, 218, 1) 100%
   );
   cursor: pointer;

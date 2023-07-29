@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey-dark-plus;
+  padding: 25px;
+  img {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    margin-bottom: 1rem;
+    height: 17px;
+  }
+  p {
+    color: $grey-light;
+    margin: 0;
+  }
+  p:hover {
+    color: $purple-light;
+    transition-duration: 0.2s;
+  }
+  .resize-p {
+    font-weight: 500;
+  }
+  i {
+    padding-right: 1rem;
+    width: 1rem;
+  }
+  .footer-description {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -20,9 +20,10 @@
 // ******************************section fonctionnement********************************************
 .fonctionnement {
   padding-bottom: 2rem;
-  h2 {
-    margin-left: 1.5rem;
-  }
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .choix-global {
@@ -33,15 +34,15 @@
   gap: 20px;
 }
 
-.fa-store {
+#active {
   color: $purple-light;
 }
 
 // restaurants
 .restaurants {
   background-color: $grey-light;
-  gap: 20px;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 
   h2 {
     padding: 1.5rem;
@@ -53,4 +54,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
