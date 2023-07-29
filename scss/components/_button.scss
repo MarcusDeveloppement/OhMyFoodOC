@@ -18,3 +18,13 @@ button:hover {
   );
   cursor: pointer;
 }
+
+.button-commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  button {
+    width: 9rem;
+  }
+}

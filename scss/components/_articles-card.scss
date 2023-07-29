@@ -1,0 +1,27 @@
+.articles {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+
+.description {
+  margin-left: 1rem;
+  span {
+    margin-right: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+}

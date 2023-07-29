@@ -30,3 +30,11 @@ footer {
     flex-direction: column;
   }
 }
+
+// ************************************footer a la carte***********************
+.footer {
+  position: absolute;
+  z-index: 5;
+  top: 83.15rem;
+  width: 100%;
+}

@@ -6,6 +6,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 html {
@@ -36,6 +37,16 @@ button a {
 button:hover {
   background: linear-gradient(0deg, rgba(146, 86, 220, 0.714) 0%, rgb(255, 121, 218) 100%);
   cursor: pointer;
+}
+
+.button-commander {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.button-commander button {
+  width: 9rem;
 }
 
 /* Cacher la case à cocher par défaut */
@@ -147,6 +158,34 @@ button:hover {
   color: #f3f3f3;
 }
 
+.articles {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.articles p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.articles h3 {
+  margin: 0;
+}
+
+.description {
+  margin-left: 1rem;
+}
+.description span {
+  margin-right: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -180,15 +219,24 @@ footer .footer-description {
   flex-direction: column;
 }
 
+.footer {
+  position: absolute;
+  z-index: 5;
+  top: 83.15rem;
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 63px;
+  height: 58px;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 .header img {
-  width: 197px;
-  height: 36px;
+  width: 156px;
+  height: auto;
 }
 .header p {
   color: #353535;
@@ -258,6 +306,85 @@ footer .footer-description {
   flex-direction: column;
   align-items: center;
   gap: 25px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.image-entete {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.image-entete img {
+  height: 275px;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #f3f3f3;
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  padding: 1rem;
+  width: 92%;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-card {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+.title-card h2 {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+.title-card .nocheck {
+  margin-left: 3rem;
+  margin-top: 0.44rem;
+}
+.title-card .check {
+  left: 303px;
+  top: 15.85px;
+  font-size: 1.34rem;
+}
+
+.main-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-article {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.first-article .subtitle-card {
+  border-bottom: solid 3px #99e2d0;
+  padding-bottom: 0.5rem;
+  width: 40px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
