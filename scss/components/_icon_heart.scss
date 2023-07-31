@@ -7,6 +7,7 @@
 
 /* Styliser l'icône de cœur */
 .heart-checkbox {
+  cursor: pointer;
   .fa-solid {
     position: absolute;
     top: 0;
@@ -25,7 +26,7 @@
 }
 
 /* Masquer le cœur vide lorsque la case est cochée */
-.heart-checkbox input[type="checkbox"]:checked + i::before {
+.heart-checkbox input:checked + i::before {
   content: "\f004";
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: border-box;

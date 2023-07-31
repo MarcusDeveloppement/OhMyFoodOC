@@ -1,0 +1,20 @@
+.restaurant-card {
+  position: relative;
+  z-index: 2;
+  .com-new {
+    position: absolute;
+    z-index: 5;
+    top: 1rem;
+    left: 16rem;
+    border-radius: 2px;
+    background-color: $green-light;
+    width: 80px;
+    height: 29px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $green-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

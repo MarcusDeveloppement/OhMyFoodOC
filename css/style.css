@@ -18,6 +18,10 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
+p {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -57,6 +61,9 @@ button:hover {
 }
 
 /* Styliser l'icône de cœur */
+.heart-checkbox {
+  cursor: pointer;
+}
 .heart-checkbox .fa-solid {
   position: absolute;
   top: 0;
@@ -73,7 +80,7 @@ button:hover {
 }
 
 /* Masquer le cœur vide lorsque la case est cochée */
-.heart-checkbox input[type=checkbox]:checked + i::before {
+.heart-checkbox input:checked + i::before {
   content: "\f004";
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: border-box;
@@ -120,7 +127,7 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
   background-color: #f3f3f3;
-  width: 335px;
+  width: 325px;
   height: 75px;
   border-radius: 20px;
   box-shadow: 0.25rem 0.25rem 10px rgba(56, 56, 56, 0.25);
@@ -136,6 +143,9 @@ button:hover {
   align-items: center;
   justify-content: center;
   font-size: 18px;
+}
+.choix i:hover {
+  color: #9356dc;
 }
 
 .choix-global article {
@@ -183,6 +193,27 @@ button:hover {
   margin-right: 1rem;
   font-weight: 700;
   display: flex;
+  align-items: center;
+}
+
+.restaurant-card {
+  position: relative;
+  z-index: 2;
+}
+.restaurant-card .com-new {
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  left: 16rem;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 29px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -248,6 +279,7 @@ footer .footer-description {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
+  height: 50px;
 }
 .localisation i {
   margin-right: 0.5rem;
@@ -265,10 +297,12 @@ footer .footer-description {
 .explorer h1 {
   margin: 0;
   width: 17rem;
+  padding: 0.6rem;
 }
 .explorer p {
   color: #353535;
   width: 315px;
+  padding-bottom: 1.4rem;
 }
 
 .fonctionnement {
