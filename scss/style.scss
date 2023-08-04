@@ -6,6 +6,7 @@
 // base
 @import "base/general";
 @import "base/typography";
+@import "base/tablette-desktop";
 
 // components
 @import "components/button";
@@ -14,6 +15,7 @@
 @import "components/restaurant-choice";
 @import "components/articles-card";
 @import "components/comment-nouveau";
+@import "components/check-choice";
 
 // layout
 @import "layout/footer";

@@ -1,7 +1,16 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
 
 a {
@@ -163,37 +172,44 @@ button:hover {
   display: flex;
   justify-content: center;
   border-radius: 100%;
-  width: 1.3rem;
+  width: 1.8rem;
   background-color: #9356dc;
   color: #f3f3f3;
 }
 
-.articles {
-  background-color: #fff;
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: width 0.3s ease;
   border-radius: 20px;
+  background-color: #fff;
   height: 69px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.articles p {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-}
-.articles h3 {
-  margin: 0;
 }
 
 .description {
+  flex-grow: 1;
+  overflow: hidden;
   margin-left: 1rem;
 }
-.description span {
-  margin-right: 1rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
+.description h3 {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+.description h5 {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14.2px;
+  font-weight: 400;
 }
 
 .restaurant-card {
@@ -217,11 +233,41 @@ button:hover {
   align-items: center;
 }
 
+.container:hover .price {
+  margin-left: -20px;
+}
+
+.price {
+  margin-top: 1.4rem;
+  padding: 1rem;
+}
+
+.icon-container {
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease;
+  background-color: #99e2d0;
+  color: white;
+  height: 100%;
+}
+
+.container:hover .icon-container {
+  width: 59px;
+}
+
+.container:hover {
+  width: 100%;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   background-color: #353535;
   padding: 25px;
+  width: 100%;
 }
 footer img {
   filter: invert(100%);
@@ -243,6 +289,7 @@ footer .resize-p {
 footer i {
   padding-right: 1rem;
   width: 1rem;
+  margin-right: 1rem;
 }
 footer .footer-description {
   gap: 10px;
@@ -259,9 +306,11 @@ footer .footer-description {
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 58px;
+  width: 100%;
   position: relative;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
@@ -280,6 +329,7 @@ footer .footer-description {
   align-items: center;
   background-color: #eaeaea;
   height: 50px;
+  width: 100%;
 }
 .localisation i {
   margin-right: 0.5rem;
@@ -293,6 +343,7 @@ footer .footer-description {
   text-align: center;
   background-color: #f3f3f3;
   height: 16rem;
+  width: 100%;
 }
 .explorer h1 {
   margin: 0;
@@ -329,6 +380,7 @@ footer .footer-description {
   background-color: #f3f3f3;
   padding-bottom: 4rem;
   padding-top: 2rem;
+  width: 100%;
 }
 .restaurants h2 {
   padding: 1.5rem;
@@ -364,8 +416,9 @@ html {
   z-index: 1;
 }
 .image-entete img {
-  height: 275px;
   object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
 }
 
 .card {
@@ -374,10 +427,10 @@ html {
   z-index: 2;
   top: 200px;
   padding: 1rem;
-  width: 92%;
   border-radius: 35px 35px 0 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .title-card {

@@ -1,0 +1,28 @@
+.container:hover .price {
+  margin-left: -20px;
+}
+
+.price {
+  margin-top: 1.4rem;
+  padding: 1rem;
+}
+
+.icon-container {
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease;
+  background-color: $green-light;
+  color: white;
+  height: 100%;
+}
+
+.container:hover .icon-container {
+  width: 59px;
+}
+
+.container:hover {
+  width: 100%;
+}
