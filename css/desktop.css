@@ -1,0 +1,94 @@
+@media (min-width: 1024px) {
+  /****************************************** Titre ****************************************/
+  .explorer h1 {
+    width: 680px;
+    font-size: 40px;
+    margin: 0.5rem;
+  }
+  .explorer p {
+    width: 50rem;
+    font-size: 18px;
+    margin: 0.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .explorer button {
+    margin: 0.5rem;
+  }
+
+  /***************************************** fontionnement **********************************/
+  .choix-global {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .fonctionnement {
+    height: 16rem;
+  }
+
+  /******************************************* restaurant ****************************/
+
+  .global-restaurants {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .restaurant-card img {
+    width: 523px;
+  }
+
+  .restaurants h2 {
+    margin-left: 10rem;
+  }
+
+  .description-restaurants label {
+    top: 0.5rem;
+    left: 30rem;
+  }
+
+  .restaurant-card .com-new {
+    left: 27rem;
+  }
+
+  /************************************************************ pied de page  ******************************************/
+
+  footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  footer .footer-description {
+    flex-direction: row;
+  }
+
+  footer img {
+    margin-bottom: 0;
+    margin-left: 8rem;
+  }
+  /***************************** pages annexes ***************************************/
+  .card {
+    padding: 3rem 12rem;
+    width: 75%;
+    margin-top: 15rem;
+  }
+
+  .title-card {
+    margin-left: 13rem;
+  }
+
+  .title-card h2 {
+    margin-bottom: 3rem;
+  }
+
+  .bot-pages {
+    top: 103rem;
+  }
+}
+
+@media (min-width: 1619px) {
+  .restaurant-card img {
+    width: 670px;
+  }
+}

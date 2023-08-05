@@ -41,6 +41,7 @@ button {
   border: none;
   padding: 0.8rem 1.2rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
 }
 button a {
   color: #f3f3f3;
@@ -48,8 +49,10 @@ button a {
 }
 
 button:hover {
-  background: linear-gradient(0deg, rgba(146, 86, 220, 0.714) 0%, rgb(255, 121, 218) 100%);
+  opacity: 0.85;
   cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 15px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
 }
 
 .button-commander {
@@ -189,6 +192,7 @@ button:hover {
   border-radius: 20px;
   background-color: #fff;
   height: 69px;
+  cursor: pointer;
 }
 
 .description {
@@ -414,6 +418,7 @@ html {
   justify-content: center;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 .image-entete img {
   object-fit: cover;
@@ -445,6 +450,7 @@ html {
   margin: 0;
   font-size: 1.7rem;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 .title-card .nocheck {
   margin-left: 3rem;

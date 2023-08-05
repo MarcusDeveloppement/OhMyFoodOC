@@ -4,6 +4,7 @@ button {
   border: none;
   padding: 0.8rem 1.2rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
   a {
     color: $grey-light;
     font-weight: 500;
@@ -11,12 +12,10 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(
-    0deg,
-    rgba(146, 86, 220, 0.714) 0%,
-    rgba(255, 121, 218, 1) 100%
-  );
+  opacity: 0.85;
   cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 15px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
 }
 
 .button-commander {
