@@ -52,8 +52,8 @@ html {
     margin-top: 0.44rem;
   }
   .check {
-    left: 303px;
-    top: 15.85px;
+    left: 326.2px;
+    top: 16px;
     font-size: 1.34rem;
   }
   display: flex;
@@ -62,7 +62,23 @@ html {
   justify-content: flex-start;
   margin-top: 0.5rem;
 }
+.lanote {
+  .check {
+    left: 308.2px;
+  }
+}
 
+.lafrancaise {
+  .check {
+    left: 245.2px;
+  }
+}
+
+.ledelice {
+  .check {
+    left: 294.1px;
+  }
+}
 .main-articles {
   display: flex;
   flex-direction: column;

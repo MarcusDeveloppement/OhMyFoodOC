@@ -23,8 +23,7 @@ html {
 }
 
 h2 {
-  margin-left: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 p {
@@ -306,6 +305,11 @@ footer .footer-description {
   z-index: 5;
   top: 83.15rem;
   width: 100%;
+  margin-top: 2.5rem;
+}
+
+.bot-enchant {
+  top: 89rem;
 }
 
 .header {
@@ -385,10 +389,14 @@ footer .footer-description {
   padding-bottom: 4rem;
   padding-top: 2rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurants h2 {
   padding: 1.5rem;
   margin: 0;
+  width: 23rem;
 }
 
 .global-restaurants {
@@ -398,6 +406,56 @@ footer .footer-description {
   gap: 25px;
 }
 
+#loader__animation {
+  width: 180px;
+  height: 180px;
+  border: 8px solid #cccccc;
+  z-index: 0;
+  border-radius: 100%;
+  animation-name: spin;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+  animation-fill-mode: forwards;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    border-top: 8px solid #9356dc;
+    border-bottom: 8px solid #99e2d0;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+    border-top: 10px solid #9356dc;
+    border-bottom: 10px solid #99e2d0;
+  }
+}
+.loader {
+  animation-name: opacity;
+  animation-duration: 2800ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, -0.39, 1, 0.41);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   margin: 0;
   padding: 0;
@@ -457,9 +515,21 @@ html {
   margin-top: 0.44rem;
 }
 .title-card .check {
-  left: 303px;
-  top: 15.85px;
+  left: 326.2px;
+  top: 16px;
   font-size: 1.34rem;
+}
+
+.lanote .check {
+  left: 308.2px;
+}
+
+.lafrancaise .check {
+  left: 245.2px;
+}
+
+.ledelice .check {
+  left: 294.1px;
 }
 
 .main-articles {
