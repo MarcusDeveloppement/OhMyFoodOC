@@ -174,7 +174,7 @@
     left: -2.5rem;
   }
   .heart-checkbox .fa-solid {
-    left: 268px;
+    left: -40.8px;
   }
 
   .title-card h2 {
@@ -184,9 +184,7 @@
   .title-card .check {
     top: 15px;
   }
-  .heart-checkbox .fa-regular {
-    left: 13.65rem;
-  }
+
   .title-card .nocheck {
     margin-top: 0.25rem;
   }
