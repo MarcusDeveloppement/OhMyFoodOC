@@ -12,10 +12,10 @@
 
 .description-restaurants {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  padding: 10px 16px;
+  justify-content: space-between;
 
   h3 {
     margin: 0;
@@ -33,4 +33,9 @@
     left: 18rem;
     top: 0.4rem;
   }
+}
+
+.text-description {
+  display: flex;
+  flex-direction: column;
 }

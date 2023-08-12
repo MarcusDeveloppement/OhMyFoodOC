@@ -34,7 +34,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-button {
+button,
+.button {
   background-image: linear-gradient(#ff79da, #9356dc);
   border-radius: 50px;
   border: none;
@@ -42,12 +43,14 @@ button {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
-button a {
+button a,
+.button a {
   color: #f3f3f3;
   font-weight: 500;
 }
 
-button:hover {
+button,
+.button:hover {
   opacity: 0.85;
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 15px rgba(0, 0, 0, 0.35);
@@ -64,39 +67,31 @@ button:hover {
   width: 9rem;
 }
 
-/* Cacher la case à cocher par défaut */
-.heart-checkbox input {
-  position: absolute;
-  opacity: 0;
+.button {
+  color: white;
+}
+
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-/* Styliser l'icône de cœur */
-.heart-checkbox {
-  cursor: pointer;
-}
-.heart-checkbox .fa-solid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 25px;
-  color: #ffffff;
-  z-index: 1;
-}
-.heart-checkbox .fa-regular {
-  position: absolute;
-  color: rgb(39, 39, 39);
-  z-index: 2;
-  font-size: 25px;
+.heart-icon {
+  font-size: 1.5rem;
+  color: rgb(249, 249, 249); /* Couleur de l'icône de base */
+  transition: color 0.5s ease-in-out;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(4, 4, 4);
 }
 
-/* Masquer le cœur vide lorsque la case est cochée */
-.heart-checkbox input:checked + i::before {
-  content: "\f004";
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: border-box;
+.heart-icon:hover {
+  background: linear-gradient(to top, violet, pink);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Rendre le texte transparent */
+  -webkit-text-stroke: none; /* Supprimer le contour */
 }
 
 .restaurant-card {
@@ -113,10 +108,10 @@ button:hover {
 
 .description-restaurants {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  padding: 10px 16px;
+  justify-content: space-between;
 }
 .description-restaurants h3 {
   margin: 0;
@@ -131,6 +126,11 @@ button:hover {
   position: absolute;
   left: 18rem;
   top: 0.4rem;
+}
+
+.text-description {
+  display: flex;
+  flex-direction: column;
 }
 
 .choix {
@@ -159,7 +159,7 @@ button:hover {
   color: #9356dc;
 }
 
-.choix-global article {
+.choix-global .article {
   position: relative;
   display: flex;
   align-items: center;
@@ -298,12 +298,21 @@ footer .footer-description {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.footer-mail {
+  color: white !important;
+}
+
+.footer-mail:hover {
+  color: #9356dc !important;
 }
 
 .footer {
   position: absolute;
   z-index: 5;
-  top: 83.15rem;
+  top: 129.15rem;
   width: 100%;
   margin-top: 2.5rem;
 }
@@ -502,6 +511,8 @@ html {
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 0.5rem;
+  justify-content: space-between;
+  padding: 0 10px;
 }
 .title-card h2 {
   font-family: "Shrikhand", cursive;
@@ -518,6 +529,9 @@ html {
   left: 326.2px;
   top: 16px;
   font-size: 1.34rem;
+}
+.title-card i {
+  margin-bottom: 1.5rem;
 }
 
 .lanote .check {

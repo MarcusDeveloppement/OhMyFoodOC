@@ -1,35 +1,22 @@
-/* Cacher la case à cocher par défaut */
-.heart-checkbox input {
-  position: absolute;
-  opacity: 0;
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-/* Styliser l'icône de cœur */
-.heart-checkbox {
-  cursor: pointer;
-  .fa-solid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 25px;
-    color: #ffffff;
-    z-index: 1;
-  }
-
-  .fa-regular {
-    position: absolute;
-    color: rgb(39, 39, 39);
-    z-index: 2;
-    font-size: 25px;
-  }
+.heart-icon {
+  font-size: 1.5rem;
+  color: rgb(249, 249, 249); /* Couleur de l'icône de base */
+  transition: color 0.5s ease-in-out;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: rgb(4, 4, 4);
 }
 
-/* Masquer le cœur vide lorsque la case est cochée */
-.heart-checkbox input:checked + i::before {
-  content: "\f004";
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: border-box;
+.heart-icon:hover {
+  background: linear-gradient(to top, violet, pink);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Rendre le texte transparent */
+  -webkit-text-stroke: none; /* Supprimer le contour */
 }

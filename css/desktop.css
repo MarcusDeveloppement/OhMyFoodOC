@@ -1,3 +1,11 @@
+@media (max-width: 1023px) {
+  .bot-pages {
+    top: 82.15rem;
+  }
+  .bot-enchant {
+    top: 87.15rem;
+  }
+}
 @media (min-width: 1024px) {
   /****************************************** Titre ****************************************/
   .explorer h1 {
@@ -70,9 +78,12 @@
     margin-bottom: 0;
     margin-left: 8rem;
   }
+  .footer {
+    top: 121.15rem;
+  }
 
   .bot-enchant {
-    top: 107rem !important;
+    top: 106rem !important;
   }
   /***************************** pages annexes ***************************************/
   .card {
@@ -82,7 +93,11 @@
   }
 
   .title-card {
-    margin-left: 3.5rem;
+    justify-content: center;
+  }
+  .title-card i {
+    margin-bottom: 3.5rem;
+    margin-left: 2rem;
   }
 
   .title-card h2 {
@@ -94,13 +109,25 @@
   }
 }
 
-@media (min-width: 1440px) {
-  .title-card {
-    margin-left: 12.5rem;
+@media (min-width: 1071px) {
+  .bot-pages {
+    top: 102.15rem !important;
   }
+  .bot-enchant {
+    top: 106.15rem !important;
+  }
+  .footer {
+    top: 84.15rem;
+  }
+}
 
+@media (min-width: 1440px) {
   .choix {
     width: 335px;
+  }
+
+  .restaurants {
+    height: 85vh;
   }
 
   .restaurants h2 {
@@ -130,26 +157,6 @@
   }
   .restaurants h2 {
     width: 87.5rem;
-  }
-
-  .title-card .nocheck {
-    margin-left: 18.85rem;
-    margin-top: -2.2rem;
-  }
-
-  .title-card {
-    margin-left: 19rem;
-  }
-
-  .title-card .check {
-    left: 303px;
-    top: 15px;
-  }
-}
-
-@media (min-width: 1750px) {
-  .title-card {
-    margin-left: 24.5rem;
   }
 }
 
@@ -188,4 +195,63 @@
   .title-card .nocheck {
     margin-top: 0.25rem;
   }
+}
+
+@media (min-width: 2730px) {
+  .global-restaurants {
+    width: 50%;
+  }
+}
+@media (min-width: 2060px) {
+  .global-restaurants {
+    width: 70%;
+  }
+}
+@media (min-width: 2943px) {
+  .global-restaurants {
+    width: 60%;
+  }
+}
+@media (min-width: 3433px) {
+  .global-restaurants {
+    width: 50%;
+  }
+}
+
+.container {
+  opacity: 0; /* Commence avec une opacité de 0 pour cacher les éléments */
+  transform: translateY(
+    20px
+  ); /* Les éléments seront légèrement décalés vers le bas */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Ajoute des transitions fluides */
+
+  /* Ajoute une animation delay variable à chaque élément */
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+/* Crée une animation pour faire apparaître les éléments */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Applique des délais d'animation variables pour chaque élément */
+.container:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.container:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.container:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.container:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.container:nth-child(5) {
+  animation-delay: 1s;
 }

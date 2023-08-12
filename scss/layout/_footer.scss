@@ -31,14 +31,23 @@ footer {
     gap: 10px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
+}
+
+.footer-mail {
+  color: white !important;
+}
+
+.footer-mail:hover {
+  color: $purple-light !important;
 }
 
 // ************************************footer a la carte***********************
 .footer {
   position: absolute;
   z-index: 5;
-  top: 83.15rem;
+  top: 129.15rem;
   width: 100%;
   margin-top: 2.5rem;
 }
