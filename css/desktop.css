@@ -219,17 +219,12 @@
 }
 
 .container {
-  opacity: 0; /* Commence avec une opacité de 0 pour cacher les éléments */
-  transform: translateY(
-    20px
-  ); /* Les éléments seront légèrement décalés vers le bas */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Ajoute des transitions fluides */
-
-  /* Ajoute une animation delay variable à chaque élément */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   animation: fadeInUp 0.7s ease forwards;
 }
 
-/* Crée une animation pour faire apparaître les éléments */
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -237,7 +232,6 @@
   }
 }
 
-/* Applique des délais d'animation variables pour chaque élément */
 .container:nth-child(1) {
   animation-delay: 0.1s;
 }

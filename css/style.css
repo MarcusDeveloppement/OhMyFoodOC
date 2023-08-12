@@ -51,9 +51,9 @@ button a,
 
 button,
 .button:hover {
-  opacity: 0.85;
+  opacity: 0.8;
   cursor: pointer;
-  box-shadow: 0.25rem 0.25rem 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0.25rem 0.25rem 15px rgba(0, 0, 0, 0.55);
   transition: 0.3s;
 }
 
@@ -87,7 +87,7 @@ button,
 }
 
 .heart-icon:hover {
-  background: linear-gradient(to top, violet, pink);
+  background: linear-gradient(to top, #ff79da, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Rendre le texte transparent */
