@@ -7,7 +7,7 @@
 
 .heart-icon {
   font-size: 1.5rem;
-  color: rgb(249, 249, 249); /* Couleur de l'icône de base */
+  color: rgb(249, 249, 249);
   transition: color 0.5s ease-in-out;
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgb(4, 4, 4);
@@ -17,6 +17,6 @@
   background: linear-gradient(to top, #ff79da, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Rendre le texte transparent */
-  -webkit-text-stroke: none; /* Supprimer le contour */
+  color: transparent;
+  -webkit-text-stroke: none;
 }
